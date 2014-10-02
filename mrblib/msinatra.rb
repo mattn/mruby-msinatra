@@ -1,6 +1,4 @@
-require 'mruby-io'
-require 'mruby-socket'
-require 'mruby-http'
+begin; require 'mruby-io'; require 'mruby-socket'; require 'mruby-http'; rescue Exception; end
 
 module Sinatic
   @content_type = nil
